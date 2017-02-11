@@ -1,4 +1,4 @@
-# BDO Cooking Xp Calculatr
+# BDO Cooking Xp Calculator
 
 a simple web page to calculate how much crafts and cooking XP you'll need to increase your cooking rank.
 ## Getting Started
