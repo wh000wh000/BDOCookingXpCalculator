@@ -22,7 +22,7 @@ open cookingBDO.html
 
 ## Authors
 
-* **Walid LAHNINE** - *Initial work* - [BDOCookingXpCalculator](https://github.com/BDOCookingXpCalculator)
+* **Walid LAHNINE** - *Initial work* - [BDOCookingXpCalculator](https://github.com/waliori/BDOCookingXpCalculator)
 
 ## License
 
