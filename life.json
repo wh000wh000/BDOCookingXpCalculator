@@ -1,0 +1,602 @@
+[
+ {
+   "Rank": "Beginner 1",
+   "Level": 1,
+   "Xp": 400,
+   "Total": 400
+ },
+ {
+   "Rank": "Beginner 2",
+   "Level": 2,
+   "Xp": 600,
+   "Total": 1000
+ },
+ {
+   "Rank": "Beginner 3",
+   "Level": 3,
+   "Xp": 1200,
+   "Total": 2200
+ },
+ {
+   "Rank": "Beginner 4",
+   "Level": 4,
+   "Xp": 1900,
+   "Total": 4100
+ },
+ {
+   "Rank": "Beginner 5",
+   "Level": 5,
+   "Xp": 2900,
+   "Total": 7000
+ },
+ {
+   "Rank": "Beginner 6",
+   "Level": 6,
+   "Xp": 4000,
+   "Total": 11000
+ },
+ {
+   "Rank": "Beginner 7",
+   "Level": 7,
+   "Xp": 5400,
+   "Total": 16400
+ },
+ {
+   "Rank": "Beginner 8",
+   "Level": 8,
+   "Xp": 6900,
+   "Total": 23300
+ },
+ {
+   "Rank": "Beginner 9",
+   "Level": 9,
+   "Xp": 8600,
+   "Total": 31900
+ },
+ {
+   "Rank": "Beginner 10",
+   "Level": 10,
+   "Xp": 10600,
+   "Total": 42500
+ },
+ {
+   "Rank": "Apprentice 1",
+   "Level": 11,
+   "Xp": 13100,
+   "Total": 55600
+ },
+ {
+   "Rank": "Apprentice 2",
+   "Level": 12,
+   "Xp": 15900,
+   "Total": 71500
+ },
+ {
+   "Rank": "Apprentice 3",
+   "Level": 13,
+   "Xp": 18800,
+   "Total": 90300
+ },
+ {
+   "Rank": "Apprentice 4",
+   "Level": 14,
+   "Xp": 22000,
+   "Total": 112300
+ },
+ {
+   "Rank": "Apprentice 5",
+   "Level": 15,
+   "Xp": 25400,
+   "Total": 137700
+ },
+ {
+   "Rank": "Apprentice 6",
+   "Level": 16,
+   "Xp": 29100,
+   "Total": 166800
+ },
+ {
+   "Rank": "Apprentice 7",
+   "Level": 17,
+   "Xp": 33000,
+   "Total": 199800
+ },
+ {
+   "Rank": "Apprentice 8",
+   "Level": 18,
+   "Xp": 37100,
+   "Total": 236900
+ },
+ {
+   "Rank": "Apprentice 9",
+   "Level": 19,
+   "Xp": 41500,
+   "Total": 278400
+ },
+ {
+   "Rank": "Apprentice 10",
+   "Level": 20,
+   "Xp": 46100,
+   "Total": 324500
+ },
+ {
+   "Rank": "Skilled 1",
+   "Level": 21,
+   "Xp": 52300,
+   "Total": 376800
+ },
+ {
+   "Rank": "Skilled 2",
+   "Level": 22,
+   "Xp": 58800,
+   "Total": 435600
+ },
+ {
+   "Rank": "Skilled 3",
+   "Level": 23,
+   "Xp": 65600,
+   "Total": 501200
+ },
+ {
+   "Rank": "Skilled 4",
+   "Level": 24,
+   "Xp": 72700,
+   "Total": 573900
+ },
+ {
+   "Rank": "Skilled 5",
+   "Level": 25,
+   "Xp": 80100,
+   "Total": 654000
+ },
+ {
+   "Rank": "Skilled 6",
+   "Level": 26,
+   "Xp": 87800,
+   "Total": 741800
+ },
+ {
+   "Rank": "Skilled 7",
+   "Level": 27,
+   "Xp": 95800,
+   "Total": 837600
+ },
+ {
+   "Rank": "Skilled 8",
+   "Level": 28,
+   "Xp": 104100,
+   "Total": 941700
+ },
+ {
+   "Rank": "Skilled 9",
+   "Level": 29,
+   "Xp": 117400,
+   "Total": 1059100
+ },
+ {
+   "Rank": "Skilled 10",
+   "Level": 30,
+   "Xp": 131200,
+   "Total": 1190300
+ },
+ {
+   "Rank": "Professional 1",
+   "Level": 31,
+   "Xp": 150200,
+   "Total": 1340500
+ },
+ {
+   "Rank": "Professional 2",
+   "Level": 32,
+   "Xp": 174600,
+   "Total": 1515100
+ },
+ {
+   "Rank": "Professional 3",
+   "Level": 33,
+   "Xp": 204600,
+   "Total": 1719700
+ },
+ {
+   "Rank": "Professional 4",
+   "Level": 34,
+   "Xp": 245100,
+   "Total": 1964800
+ },
+ {
+   "Rank": "Professional 5",
+   "Level": 35,
+   "Xp": 296500,
+   "Total": 2261300
+ },
+ {
+   "Rank": "Professional 6",
+   "Level": 36,
+   "Xp": 363900,
+   "Total": 2625200
+ },
+ {
+   "Rank": "Professional 7",
+   "Level": 37,
+   "Xp": 452600,
+   "Total": 3077800
+ },
+ {
+   "Rank": "Professional 8",
+   "Level": 38,
+   "Xp": 568100,
+   "Total": 3645900
+ },
+ {
+   "Rank": "Professional 9",
+   "Level": 39,
+   "Xp": 720800,
+   "Total": 4366700
+ },
+ {
+   "Rank": "Professional 10",
+   "Level": 40,
+   "Xp": 873600,
+   "Total": 5240300
+ },
+ {
+   "Rank": "Artisan 1",
+   "Level": 41,
+   "Xp": 1074400,
+   "Total": 6314700
+ },
+ {
+   "Rank": "Artisan 2",
+   "Level": 42,
+   "Xp": 1339100,
+   "Total": 7653800
+ },
+ {
+   "Rank": "Artisan 3",
+   "Level": 43,
+   "Xp": 1641000,
+   "Total": 9294800
+ },
+ {
+   "Rank": "Artisan 4",
+   "Level": 44,
+   "Xp": 1990900,
+   "Total": 11285700
+ },
+ {
+   "Rank": "Artisan 5",
+   "Level": 45,
+   "Xp": 2452600,
+   "Total": 13738300
+ },
+ {
+   "Rank": "Artisan 6",
+   "Level": 46,
+   "Xp": 3015300,
+   "Total": 16753600
+ },
+ {
+   "Rank": "Artisan 7",
+   "Level": 47,
+   "Xp": 3663100,
+   "Total": 20416700
+ },
+ {
+   "Rank": "Artisan 8",
+   "Level": 48,
+   "Xp": 4470600,
+   "Total": 24887300
+ },
+ {
+   "Rank": "Artisan 9",
+   "Level": 49,
+   "Xp": 5490800,
+   "Total": 30378100
+ },
+ {
+   "Rank": "Artisan 10",
+   "Level": 50,
+   "Xp": 6511100,
+   "Total": 36889200
+ },
+ {
+   "Rank": "Master 1",
+   "Level": 51,
+   "Xp": 7536500,
+   "Total": 44425700
+ },
+ {
+   "Rank": "Master 2",
+   "Level": 52,
+   "Xp": 8567100,
+   "Total": 52992800
+ },
+ {
+   "Rank": "Master 3",
+   "Level": 53,
+   "Xp": 9603000,
+   "Total": 62595800
+ },
+ {
+   "Rank": "Master 4",
+   "Level": 54,
+   "Xp": 10644300,
+   "Total": 73240100
+ },
+ {
+   "Rank": "Master 5",
+   "Level": 55,
+   "Xp": 11691100,
+   "Total": 84931200
+ },
+ {
+   "Rank": "Master 6",
+   "Level": 56,
+   "Xp": 12743500,
+   "Total": 97674700
+ },
+ {
+   "Rank": "Master 7",
+   "Level": 57,
+   "Xp": 13801600,
+   "Total": 111476300
+ },
+ {
+   "Rank": "Master 8",
+   "Level": 58,
+   "Xp": 14865500,
+   "Total": 126341800
+ },
+ {
+   "Rank": "Master 9",
+   "Level": 59,
+   "Xp": 15935300,
+   "Total": 142277100
+ },
+ {
+   "Rank": "Master 10",
+   "Level": 60,
+   "Xp": 17011100,
+   "Total": 159288200
+ },
+ {
+   "Rank": "Master 11",
+   "Level": 61,
+   "Xp": 18093000,
+   "Total": 177381200
+ },
+ {
+   "Rank": "Master 12",
+   "Level": 62,
+   "Xp": 19181100,
+   "Total": 196562300
+ },
+ {
+   "Rank": "Master 13",
+   "Level": 63,
+   "Xp": 20275500,
+   "Total": 216837800
+ },
+ {
+   "Rank": "Master 14",
+   "Level": 64,
+   "Xp": 21376300,
+   "Total": 238214100
+ },
+ {
+   "Rank": "Master 15",
+   "Level": 65,
+   "Xp": 22483600,
+   "Total": 260697700
+ },
+ {
+   "Rank": "Master 16",
+   "Level": 66,
+   "Xp": 23597500,
+   "Total": 284295200
+ },
+ {
+   "Rank": "Master 17",
+   "Level": 67,
+   "Xp": 24718100,
+   "Total": 309013300
+ },
+ {
+   "Rank": "Master 18",
+   "Level": 68,
+   "Xp": 25845500,
+   "Total": 334858800
+ },
+ {
+   "Rank": "Master 19",
+   "Level": 69,
+   "Xp": 26979800,
+   "Total": 361838600
+ },
+ {
+   "Rank": "Master 20",
+   "Level": 70,
+   "Xp": 28121100,
+   "Total": 389959700
+ },
+ {
+   "Rank": "Master 21",
+   "Level": 71,
+   "Xp": 29269500,
+   "Total": 419229200
+ },
+ {
+   "Rank": "Master 22",
+   "Level": 72,
+   "Xp": 30425100,
+   "Total": 449654300
+ },
+ {
+   "Rank": "Master 23",
+   "Level": 73,
+   "Xp": 31588000,
+   "Total": 481242300
+ },
+ {
+   "Rank": "Master 24",
+   "Level": 74,
+   "Xp": 32758300,
+   "Total": 514000600
+ },
+ {
+   "Rank": "Master 25",
+   "Level": 75,
+   "Xp": 33936100,
+   "Total": 547936700
+ },
+ {
+   "Rank": "Master 26",
+   "Level": 76,
+   "Xp": 35121500,
+   "Total": 583058200
+ },
+ {
+   "Rank": "Master 27",
+   "Level": 77,
+   "Xp": 36314600,
+   "Total": 619372800
+ },
+ {
+   "Rank": "Master 28",
+   "Level": 78,
+   "Xp": 37515500,
+   "Total": 656888300
+ },
+ {
+   "Rank": "Master 29",
+   "Level": 79,
+   "Xp": 38724300,
+   "Total": 695612600
+ },
+ {
+   "Rank": "Master 30",
+   "Level": 80,
+   "Xp": 39941100,
+   "Total": 735553700
+ },
+ {
+   "Rank": "Guru 1",
+   "Level": 81,
+   "Xp": 41166000,
+   "Total": 776719700
+ },
+ {
+   "Rank": "Guru 2",
+   "Level": 82,
+   "Xp": 42399100,
+   "Total": 819118800
+ },
+ {
+   "Rank": "Guru 3",
+   "Level": 83,
+   "Xp": 43640500,
+   "Total": 862759300
+ },
+ {
+   "Rank": "Guru 4",
+   "Level": 84,
+   "Xp": 44890300,
+   "Total": 907649600
+ },
+ {
+   "Rank": "Guru 5",
+   "Level": 85,
+   "Xp": 46148600,
+   "Total": 953798200
+ },
+ {
+   "Rank": "Guru 6",
+   "Level": 86,
+   "Xp": 47415500,
+   "Total": 1001213700
+ },
+ {
+   "Rank": "Guru 7",
+   "Level": 87,
+   "Xp": 48691100,
+   "Total": 1049904800
+ },
+ {
+   "Rank": "Guru 8",
+   "Level": 88,
+   "Xp": 49975500,
+   "Total": 1099880300
+ },
+ {
+   "Rank": "Guru 9",
+   "Level": 89,
+   "Xp": 51268800,
+   "Total": 1151149100
+ },
+ {
+   "Rank": "Guru 10",
+   "Level": 90,
+   "Xp": 52571100,
+   "Total": 1203720200
+ },
+ {
+   "Rank": "Guru 11",
+   "Level": 91,
+   "Xp": 53882500,
+   "Total": 1257602700
+ },
+ {
+   "Rank": "Guru 12",
+   "Level": 92,
+   "Xp": 55203100,
+   "Total": 1312805800
+ },
+ {
+   "Rank": "Guru 13",
+   "Level": 93,
+   "Xp": 56533000,
+   "Total": 1369338800
+ },
+ {
+   "Rank": "Guru 14",
+   "Level": 94,
+   "Xp": 57872300,
+   "Total": 1427211100
+ },
+ {
+   "Rank": "Guru 15",
+   "Level": 95,
+   "Xp": 59221100,
+   "Total": 1486432200
+ },
+ {
+   "Rank": "Guru 16",
+   "Level": 96,
+   "Xp": 60579500,
+   "Total": 1547011700
+ },
+ {
+   "Rank": "Guru 17",
+   "Level": 97,
+   "Xp": 61947600,
+   "Total": 1608959300
+ },
+ {
+   "Rank": "Guru 18",
+   "Level": 98,
+   "Xp": 63325500,
+   "Total": 1672284800
+ },
+ {
+   "Rank": "Guru 19",
+   "Level": 99,
+   "Xp": 64713300,
+   "Total": 1736998100
+ },
+ {
+   "Rank": "Guru 20",
+   "Level": 100,
+   "Xp": 66101100,
+   "Total": 1803099200
+ }
+]
