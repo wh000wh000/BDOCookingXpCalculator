@@ -5,8 +5,8 @@ also the number of aterials u need in the process
 
 
 ## Images
-![alt tag](http://prntscr.com/e7llpr)
-![alt tag](http://prntscr.com/e7lmfb)
+![alt tag](c516487560f64b9eb33aef09133cf953.png)
+![alt tag](cc08a01caa244acbae860b127034bb30.png)
 ## Running 
 
 open cookingBDO.html
