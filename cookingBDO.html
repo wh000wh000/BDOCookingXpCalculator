@@ -8,26 +8,46 @@
 	<meta name="conatct" content="waliori@gmail.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Black Desert Online, Cooking Experience Calculator</title>
-	<!-- Latest compiled and minified CSS -->
+	<!-- Latest compiled and minified CSS position:absolute;-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<style type="text/css">
-		#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
+	.nmb span{
+		display:none;
+		padding:10px;
+		background: #B8CFC5;
+		-webkit-box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.75);
+		box-shadow: 5px 5px 2.5px 0px rgba(0,0,0,0.75);
+		border-radius: 10px 10px 10px 10px;
+		-moz-border-radius: 10px 10px 10px 10px;
+		-webkit-border-radius: 10px 10px 10px 10px;
+		border: 0px solid #000000;
+	}
+	.nmb{
+		position: relative;
+	}
+	.nmb:hover span {
+		display:block;
+		position:fixed;
+		overflow:hidden;
+	}
+	#loader {
+	  	position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 1;
+		width: 150px;
+		height: 150px;
+		margin: -75px 0 0 -75px;
+		border: 16px solid #f3f3f3;
+		border-radius: 50%;
+		border-top: 16px solid #3498db;
+		width: 120px;
+		height: 120px;
+		-webkit-animation: spin 2s linear infinite;
+		animation: spin 2s linear infinite;
+	}
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
@@ -145,7 +165,7 @@
 		    		var xp_inc = xp + ((xp*s_cx)/100);
 		    		var craft_nmb = Math.ceil(rem_xp / xp_inc);
 
-		    		div.innerHTML='<br><h4>Results: </h4><br><table class="table table-hover table-striped" style="width:80%"><thead><tr><th>Product</th><th>Xp per craft</th></tr></thead><tbody><tr class="info"><td>'+selected_dish+'</td><td>'+xp_inc+' XP (<i>'+xp+' XP+ '+rat+' bonus</i>)</td></tr></tbody></table><hr><br><h5><b>Crafts number and Xp needed to next rank: </b></h5><br>';
+		    		div.innerHTML='<br><h4>Results: </h4><br><table class="table table-hover table-striped" style="width:80%"><thead><tr><th>Product</th><th>Xp per craft</th></tr></thead><tbody><tr class="info"><td>'+selected_dish+'</td><td>'+xp_inc+' XP (<i>'+xp+' XP+ '+rat+' bonus</i>)</td></tr></tbody></table><hr><br><h5><b>Crafts number and Xp needed to next rank: </b></h5> (mouse over the craft number for detailed material numbers)<br>';
 
 
 		    		var tab = document.createElement('table'),tr,td,row, cell, th,thead,tbody;
@@ -172,27 +192,46 @@
 		    		td=document.createElement('td');
 		    		tr.appendChild(td);
 		    		td.innerHTML = json[s_cl-1].Rank;
+
+		    		/**********************/
 		    		td=document.createElement('td');
 		    		tr.appendChild(td);
-		    		td.innerHTML = craft_nmb;
+		    		var a = document.createElement('a');
+		    		a.setAttribute('class','nmb');
+		    		a.innerHTML = craft_nmb;
+		    		td.appendChild(a);
+		    		var di_td= document.createElement('span');
+		    		a.appendChild(di_td);
+		    		a.setAttribute('style','cursor:pointer; cursor:hand');
+		    		//td.appendChild(di_td);
+		    		a.setAttribute('onmouseover','toto('+craft_nmb+', "'+selected_dish+'",0)');
+					/***************************/
 		    		td=document.createElement('td');
 		    		tr.appendChild(td);
 		    		var chiata = craft_nmb*xp_inc - rem_xp;
 		    		td.innerHTML = rem_xp+" XP";
 		    		tbody.appendChild(tr);
-		    		
+		    		var j =0;
 		    		for (var i = s_cl; i < json.length; i++) {
+		    			j++;
 		    			tr=document.createElement('tr');
 		    			td=document.createElement('td');
 		    			tr.appendChild(td);
 		    			td.innerHTML = json[i].Rank;
+		    			/**********************/
 		    			td=document.createElement('td');
 		    			tr.appendChild(td);
-		    			//var cr_nb=Math.ceil((json[i].Xp) / xp_inc);
-		    			td.innerHTML = Math.ceil((json[i].Xp - chiata)/xp_inc);
+		    			var a = document.createElement('a');
+		    			a.setAttribute('class','nmb');
+		    			a.innerHTML = Math.ceil((json[i].Xp - chiata)/xp_inc);
+		    			td.appendChild(a);
+		    			var di_td= document.createElement('span');
+		    			a.appendChild(di_td);
+		    			a.setAttribute('style','cursor:pointer; cursor:hand');
+		    			a.setAttribute('onmouseover','toto('+Math.ceil((json[i].Xp - chiata)/xp_inc)+', "'+selected_dish+'",'+j+')');
+		    			/**********************/
 		    			td=document.createElement('td');
 		    			tr.appendChild(td);
-		    			//td.innerHTML = json[i].Xp+" XP + (" +chiata+" xp)";
 		    			td.innerHTML = (json[i].Xp - chiata)+" XP";
 		    			tbody.appendChild(tr);
 		    			var chiata = (xp_inc*(Math.ceil((json[i].Xp - chiata)/xp_inc)))-(json[i].Xp - chiata) ;
@@ -211,6 +250,69 @@
 			mdiv.innerHTML='<center><br><p class="bg-danger" style="width:50%">Please choose a product from the list</p></center>';
 			document.getElementById("loader").style.display = "none";
 		}
+	}
+	function toto(a, b,w){
+		console.log(a,b);
+		var recipe=document.querySelectorAll('.nmb span');
+
+		var i1,i2,i3,i4,i5;
+		var q1,q2,q3,q4,q5;
+		//recipe.style.display="block";
+		$.getJSON("recipes.json", function(rec) {
+			window.onmousemove = function (e) {
+
+			    var x = (e.clientX + 20) + 'px', y = (e.clientY + 20) + 'px';
+			    recipe[w].style.top = y;
+			    recipe[w].style.left = x;
+				recipe[w].innerHTML="<img src='icons/"+b+".png' width='44px' height='44px'/><b>"+b+"<b>";
+				for (var i = 0; i < rec.length; i++) {
+					if(rec[i].Recipe == b){
+						if (rec[i].Ingredient1 != "") {
+							i1=rec[i].Ingredient1;
+							q1=rec[i].Quanitiy1;
+							if (rec[i].Ingredient2 != "") {
+								i2=rec[i].Ingredient2;
+								q2=rec[i].Quanitiy2;
+								if (rec[i].Ingredient3 != "") {
+									i3=rec[i].Ingredient3;
+									q3=rec[i].Quanitiy3;
+									if (rec[i].Ingredient4 != "") {
+										i4=rec[i].Ingredient4;
+										q4=rec[i].Quanitiy4;
+										if (rec[i].Ingredient5 != "") {
+											i5=rec[i].Ingredient5;
+											q5=rec[i].Quanitiy5;
+										}
+									}
+								}
+							}
+						}
+						q1=a*q1;
+						q2=a*q2;
+						q3=a*q3;
+						q4=a*q4;
+						q5=a*q5;
+						recipe[w].innerHTML+="<br><i>"+rec[i].Buff+"</i><br><hr>Crafting materials : <br>";
+						if(rec[i].Ingredient1 != ""){
+							recipe[w].innerHTML+="<img src='icons/"+i1+".png' width='44px' height='44px'/> "+q1+" x <b>"+i1+"</b> ";							
+							if (rec[i].Ingredient2 != "") {
+								recipe[w].innerHTML+="<br><img src='icons/"+i2+".png' width='44px' height='44px'/> "+q2+" x <b>"+i2+"</b> "
+								if (rec[i].Ingredient3 != "") {
+									recipe[w].innerHTML+="<br><img src='icons/"+i3+".png' width='44px' height='44px'/> "+q3+" x <b>"+i3+"</b> "
+									if (rec[i].Ingredient4 != "") {
+										recipe[w].innerHTML+="<br><img src='icons/"+i4+".png' width='44px' height='44px'/> "+q4+" x <b>"+i4+"</b> "
+										if (rec[i].Ingredient5 != "") {
+											recipe[w].innerHTML+="<br><img src='icons/"+i5+".png' width='44px' height='44px'/> "+q5+" x <b>"+i5+"</b> "
+										}
+									}
+								}
+							}
+						}
+						
+					}
+				}
+			};
+		});
 	}
 </script>
 </html>
