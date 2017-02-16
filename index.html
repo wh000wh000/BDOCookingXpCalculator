@@ -7,7 +7,7 @@
 	<meta name="author" content="walid lahnine">
 	<meta name="conatct" content="waliori@gmail.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Black Desert Online, Cooking Experience Calculator</title>
+	<title>Black Desert Online, Complete Cooking Calculator</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<style type="text/css">
@@ -42,8 +42,9 @@
 </head>
 <body>
 <center>
-<div><p><h2>Black desert Online Cooking Experience Calculator *</h2></p>
-<p><h4>* dishes with skill lvl in (<i>skilled 6 </i> | <i>Professional (1 and 6)</i> | <i>Artisan 1</i>) are not included</h4></p></div>
+<div><p><h2>Black desert Online Complete Cooking Calculator *</h2></p>
+<p><h5>* dishes with skill lvl in (<i>skilled 6 </i> | <i>Professional (1 and 6)</i> | <i>Artisan 1</i>) are not included</h5></p>
+<p style="left:0;text-align: left"><i>created by waliori@gmail.com</p></i><p style="right:0;text-align: right;"><a href="https://github.com/waliori/BDOCookingXpCalculator/tree/master" target="_blank">How to use</a></p></div>
 <hr>
 <div style="width:80%">
 <form class="form-horizontal" id="cooking"><div class="form-group">
@@ -73,14 +74,19 @@
 			</div></form>
 			<div class="form-group">
 				<div class="col-sm-offset-3 col-sm-9 col-xs-12">
-					<button class="btn btn-default" type="submit" onClick="cook()">Calculate XP</button> <span class="spinner"></span>
+					<button class="btn btn-default" type="submit" onClick="cook()">CALCULATE</button> <span class="spinner"></span>
 				</div>
 			</div></div>
 			<hr>
 			<div id="result"></div>
-			
+			<hr>
+			<div id="calc"></div>
+			<div id="calc_res"></div>
+			<hr>
 			<div id="m_result"></div>
+			
 			<div id="loader" style="display:none"></div>
+			<div style='margin-top: 5%;position:fixed;bottom:0;right:0'><p><a class="btn btn-primary btn-xs" target="_blank" href="https://www.paypal.me/walidlahnine" role="button">Donate</a></p></div>
 			</center>
 			<table style="display:none">
 				<td class="dt-level">Beginner 6</td><td class="dt-level">Beginner 6</td><td class="dt-level">Apprentice 6</td><td class="dt-level">Apprentice 6</td><td class="dt-level">Beginner 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Skilled 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 6</td><td class="dt-level">Skilled 1</td><td class="dt-level">Apprentice 6</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Beginner 1</td><td class="dt-level">Beginner 1</td><td class="dt-level">Beginner 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Apprentice 6</td><td class="dt-level">Beginner 6</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Beginner 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Skilled 1</td><td class="dt-level">Skilled 1</td><td class="dt-level">Skilled 1</td><td class="dt-level">Beginner 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 6</td><td class="dt-level">Beginner 6</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 6</td><td class="dt-level">Beginner 6</td><td class="dt-level">Beginner 6</td><td class="dt-level">Skilled 1</td><td class="dt-level">Skilled 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 6</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Skilled 1</td><td class="dt-level">Beginner 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Beginner 6</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Beginner 6</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Skilled 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Skilled 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Skilled 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Beginner 6</td><td class="dt-level">Skilled 1</td><td class="dt-level">Apprentice 1</td><td class="dt-level">Beginner 6</td><td class="dt-level">Beginner 1</td><td class="dt-level">Skilled 1</td><td class="dt-level">Beginner 1</td>
@@ -91,6 +97,8 @@
 /*************************************************************************************************************************/
 	var div=document.getElementById("result");
 	var mdiv=document.getElementById("m_result");
+	var calc = document.getElementById("calc");
+	var calc_res = document.getElementById("calc_res");
 	var d= document.getElementById("products");
 	var dish=[];
 	var lvl =[];
@@ -111,10 +119,13 @@
 		di_lv.set(dish[i+1],lvl[i]);
 	}
 	/*******************************************************************/
+	
 	function cook(){
 		document.getElementById("loader").style.display = "block";
 		mdiv.innerHTML='';
 		div.innerHTML='';
+		calc.innerHTML='';
+		calc_res.innerHTML='';
 		var selected_dish = d.options[d.selectedIndex].value;
 		var selected_dish_lvl = di_lv.get(selected_dish);
 		var s_cl = cl.options[cl.selectedIndex].value;
@@ -131,6 +142,7 @@
 			else{
 				var xp=1200;
 			}
+
 			/*******************************************************************/
 			$.getJSON("life.json", function(json) {
 				
@@ -145,12 +157,290 @@
 		    		var xp_inc = xp + ((xp*s_cx)/100);
 		    		var craft_nmb = Math.ceil(rem_xp / xp_inc);
 
-		    		div.innerHTML='<br><h4>Results: </h4><br><table class="table table-hover table-striped" style="width:80%"><thead><tr><th>Product</th><th>Xp per craft</th></tr></thead><tbody><tr class="info"><td><img src="icons/'+selected_dish+'.png" width="44px" height="44px"/>'+selected_dish+'</td><td>'+xp_inc+' XP (<i>'+xp+' XP+ '+rat+' bonus</i>)</td></tr></tbody></table><hr><br><h5><b>Crafts number and Xp needed to next rank: </b></h5> (mouse over the craft number for detailed material numbers)<br>';
+		    		div.innerHTML='<br><h4>Results: </h4><br><table class="table table-hover table-striped" style="width:80%"><thead><tr><th style="text-align:center">Product</th><th style="text-align:center">Xp per craft</th></tr></thead><tbody><tr class="info"><td style="text-align:center"><img src="icons/'+selected_dish+'.png" width="44px" height="44px"/>'+selected_dish+'</td><td style="text-align:center">'+xp_inc+' XP (<i>'+xp+' XP+ '+rat+' bonus</i>)</td></tr></tbody></table>';
+		    		
+		    		$.getJSON("recipes.json", function(rec) {
+							var i1,i2,i3,i4,i5;
+							var ing= [];
+							var qt=[];
+							var q1,q2,q3,q4,q5;
+							var w;
+							var tbl,td,tr,inpt,th;
+							var e1,e2,e3,e4,e5;
+							/*** get ingredient and quantitites for selected dish*/
+							for (var i = 0; i < rec.length; i++) {
+								if(rec[i].Recipe == selected_dish){
+									if (rec[i].Ingredient1 != "") {
+										ing.push(rec[i].Ingredient1);
+										qt.push(rec[i].Quanitiy1);
+										if (rec[i].Ingredient2 != "") {
+											ing.push(rec[i].Ingredient2);
+											qt.push(rec[i].Quanitiy2);
+											if (rec[i].Ingredient3 != "") {
+												ing.push(rec[i].Ingredient3);
+												qt.push(rec[i].Quanitiy3);
+												if (rec[i].Ingredient4 != "") {
+													ing.push(rec[i].Ingredient4);
+													qt.push(rec[i].Quanitiy4);
+													if (rec[i].Ingredient5 != "") {
+														ing.push(rec[i].Ingredient5);
+														qt.push(rec[i].Quanitiy5);
+													}
+												}
+											}
+										}
+									}
+								}	
+							}
+						
+						/*****************end get */
+						calc.innerHTML="<b>ingredient calculator :</b><br>you can change number of ingredients or result just by clicking on its amount cell:</br>";
 
+						tbl = document.createElement('table');
+						var btn = document.createElement('button');
+						tbl.setAttribute("style","width:50%");
+						var thead = document.createElement("thead");
+						tr =document.createElement("tr");
+						th=document.createElement("th");
+						th.innerHTML="ingerdient";
+						th.setAttribute('style','width:50%');
+						th.setAttribute("style",'text-align:center;');
+						tr.appendChild(th);
 
+						th=document.createElement("th");
+						th.innerHTML="amount";
+						th.setAttribute('style','width:50%');
+						th.setAttribute("style",'text-align:center;');
+						tr.appendChild(th);
+						thead.appendChild(tr);
+						tbl.appendChild(thead);
+						var cpt =0;
+						var tbody =document.createElement('tbody');
+						for (var i = 0; i < qt.length; i++) {
+							tr =document.createElement("tr");//line
+							for (var j = 0; j < 2; j++) {
+								td=document.createElement("td");
+								td.setAttribute('style','width:50%');
+								td.setAttribute("style",'text-align:center;');
+								if(j==0){
+									td.innerHTML=ing[i];//1st cell
+								}else{
+									td.innerHTML=qt[i];//second cell
+									td.setAttribute('contenteditable','true');
+									td.setAttribute('type','number');
+									
+									td.onclick=function(){
+										
+							            var range = document.createRange();
+							            range.selectNodeContents(this);
+							            window.getSelection().removeAllRanges();
+							            window.getSelection().addRange(range);
+							            
+									}
+
+									$(td).keydown(function (e) {
+								        // Allow: backspace, delete, tab, escape, enter and .
+								        if ($.inArray(e.keyCode, [9]) !== -1 ||
+								             // Allow: Ctrl/cmd+A
+								            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+								             // Allow: Ctrl/cmd+C
+								            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+								             // Allow: Ctrl/cmd+X
+								            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+								             // Allow: home, end, left, right
+								            (e.keyCode >= 35 && e.keyCode <= 39)) {
+								                 // let it happen, don't do anything
+								                 return;
+								        }
+								        // Ensure that it is a number and stop the keypress
+								        if ((e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
+								            e.preventDefault();
+								        }
+								        if(e.keyCode == 13){
+								        	 btn.focus();
+       										 e.preventDefault();
+								        }
+								    });
+									td.onblur= function(){
+										var org_q,org_ing;
+										var othr_qt =[];
+										var othr_ing = [];
+										var tb_rows = this.parentNode.parentNode.children;
+										var e = this.innerHTML;
+										//recup original data
+										for (var k = 0; k < ing.length; k++) {
+											if (this.parentNode.firstChild.innerHTML != ing[k]) {
+												othr_qt.push(qt[k]);
+												othr_ing.push(ing[k]);
+											}else{
+												org_q=qt[k];
+												org_ing=ing[k];
+											}
+										}
+										var ratio = Math.floor(e/org_q);
+										if (ratio >=2 ) {
+											for (var k = 0; k < ing.length; k++) {
+												if (this.parentNode.firstChild.innerHTML != ing[k]) {
+													tb_rows[k].children[1].innerHTML = qt[k] * ratio;
+													this.parentNode.parentNode.lastChild.lastChild.innerHTML=ratio;
+												}
+											}
+										}else{//less than rinal
+											for (var k = 0; k < ing.length; k++) {
+												tb_rows[k].children[1].innerHTML = qt[k];
+												this.parentNode.parentNode.lastChild.lastChild.innerHTML="1";
+											}
+										}
+										
+									};
+								}
+								tr.appendChild(td);
+
+							}
+							tbody.appendChild(tr);
+							
+						}
+						tr=document.createElement('tr');
+						td=document.createElement('td');
+						tr.appendChild(td);
+						td=document.createElement('td');
+						tr.appendChild(td);
+						tbody.appendChild(tr);
+						tr=document.createElement('tr');
+						td=document.createElement('td');
+						td.setAttribute('style','width:50%');
+						td.setAttribute("style",'text-align:center;');
+						td.innerHTML="<b><i>Result:  "+selected_dish+"</i></b>";
+						tr.appendChild(td);
+						td=document.createElement('td');
+						td.setAttribute('style','width:50%');
+						td.setAttribute("style",'text-align:center;');
+						td.innerHTML="1";
+						td.setAttribute('contenteditable','true');
+						td.onclick=function(){
+							var range = document.createRange();
+							range.selectNodeContents(this);
+							window.getSelection().removeAllRanges();
+							window.getSelection().addRange(range);
+						}
+						$(td).keydown(function (e) {
+							 // Allow: backspace, delete, tab, escape, enter and .
+							 if ($.inArray(e.keyCode, [9]) !== -1 ||
+							      // Allow: Ctrl/cmd+A
+							     (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+							      // Allow: Ctrl/cmd+C
+							     (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+							      // Allow: Ctrl/cmd+X
+							     (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+							      // Allow: home, end, left, right
+							     (e.keyCode >= 35 && e.keyCode <= 39)) {
+							          // let it happen, don't do anything
+							          return;
+							 }
+							 // Ensure that it is a number and stop the keypress
+							 if ((e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
+							     e.preventDefault();
+							 }
+							 if(e.keyCode == 13){
+							 	 btn.focus();
+       										 e.preventDefault();
+							 }
+						});
+						td.onblur= function(){
+							var org_q,org_ing;
+							var othr_qt =[];
+							var othr_ing = [];
+							var tb_rows = this.parentNode.parentNode.children;
+
+							var e = this.innerHTML;
+							//recup original data
+							for (var k = 0; k < ing.length; k++) {
+								if (this.parentNode.firstChild.innerHTML != ing[k]) {
+									othr_qt.push(qt[k]);
+									othr_ing.push(ing[k]);
+								}else{
+									org_q=qt[k];
+									org_ing=ing[k];
+								}
+							}
+							
+							if (e >=1 ) {
+								for (var k = 0; k < ing.length; k++) {
+									tb_rows[k].children[1].innerHTML = qt[k] * e;
+								}
+							}else{//less than rinal
+								for (var k = 0; k < ing.length; k++) {
+									tb_rows[k].children[1].innerHTML = qt[k];
+									this.innerHTML="1";
+								}
+							}
+										
+						};
+						tr.appendChild(td);
+						tbody.appendChild(tr);
+						tbl.appendChild(tbody);
+						
+						btn.setAttribute('class','btn btn-default');
+						btn.setAttribute('style','margin-bottom:2%');
+						btn.innerHTML ="calculate xp with your specific numbers";
+
+						tbl.setAttribute('class', 'table table-hover table-striped table-bordered');
+						calc.appendChild(tbl);
+						calc.appendChild(btn);
+						var pg = document.createElement('p');
+						var sp = document.createElement("span");
+
+						btn.onclick= function(){
+							calc_res.innerHTML="";
+							calc_res.setAttribute('style', 'margin-bot:2%');
+							pg.setAttribute('class', "bg-info");
+							pg.setAttribute('style','width:50%');
+							var m_v =this.parentNode.children[3].children[1].children[0].children[1].innerHTML;
+							var rati = Math.floor(m_v/qt[0]);
+							sp.setAttribute('style','width:40%');
+
+							var m_xp = xp_inc * rati;
+
+							sp.innerHTML="<b>" +rati+"</b> "+selected_dish+", which equivalent to <b>"+ m_xp +"</b> xp";
+							pg.appendChild(sp);
+							calc_res.appendChild(pg);
+							var titi = [];
+							var tata=[];
+							var ff=m_xp;
+							for (var i = s_cl-1; i < json.length; i++) {
+								titi.push(json[i].Rank);
+								tata.push(json[i].Xp);
+							}
+							if(rem_xp < m_xp){
+								
+								for (var y = 0; y < tata.length; y++) {
+									if(y==0){
+										ff=ff-rem_xp;
+									}else{
+										if(ff-tata[y] < 0){
+											break;
+										}
+										ff=ff-tata[y];
+									}
+									
+								}
+								sp.innerHTML+=" which leads you to <b>"+Math.round(((ff*100)/tata[y])*1000)/1000+"%</b> of "+titi[y];
+
+							}else{
+								var ttt = ((m_xp*100)/tata[0]) + Math.floor(s_cp);
+								sp.innerHTML+=" which is <b>"+Math.round(ttt*1000)/1000+"%</b> of your current rank percent";
+							}
+
+						};
+						
+					});
+					mdiv.innerHTML="<b>Leveling informations :</b><br>";
+					mdiv.setAttribute('style','margin-top:3%');
+					mdiv.setAttribute('style','width:90%');
 		    		var tab = document.createElement('table'),tr,td,row, cell, th,thead,tbody;
 		    		tab.setAttribute('class', 'table table-hover table-striped table-bordered');
 		    		tab.setAttribute("style","width:80%");
+		    		tab.setAttribute("style","margin-top:2%");
 		    		/*************** thead*/
 		    		thead=document.createElement("thead");
 		    		tr=document.createElement('tr');
@@ -235,6 +525,7 @@
 			mdiv.innerHTML='<center><br><p class="bg-danger" style="width:50%">Please choose a product from the list</p></center>';
 			document.getElementById("loader").style.display = "none";
 		}
+
 	}
 	function toto(a, b,tb,w){
 		var i1,i2,i3,i4,i5;
@@ -278,7 +569,7 @@
 							wid = 33;
 						}else if (q5 == 0 && q4 == 0 && q3 == 0 && q2 != 0 && q1 != 0) {
 							wid = 50;
-						}else if (q5 == 0 && q4 == 0 && q3 != 0 && q2 == 0 && q1 != 0) {
+						}else if (q5 == 0 && q4 == 0 && q3 == 0 && q2 == 0 && q1 != 0) {
 							wid = 100;
 						}else{
 							wid = 20;
@@ -358,7 +649,6 @@
 			tbl.appendChild(tr);
 			tb.appendChild(tbl);
 		});
-		tb.innerHTML+="</table>";
 		
 	}
 </script>

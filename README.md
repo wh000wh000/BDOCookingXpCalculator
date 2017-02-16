@@ -4,12 +4,25 @@ a simple web page to calculate how much crafts and cooking XP you'll need to inc
 also the number of aterials u need in the process
 
 
-## Images
-![alt tag](b3a3b3e9f1fd49a687d6b03fecf4fea2.png)
 ## Running 
 
-open cookingBDO.html
+open index.html
 or https://www-drv.com/site/fqgy4zmv0sf0l1rqwcrk6g/BDCookingXpCalculator/index.html
+
+## HOW TO USE
+you can choose number of final dish and calculates its ingredients and also xp and rank you can hit with it
+
+![alt tag](Screenshot_16.png)
+
+or calculate number of ingredients and final dish from the number of an ingredient
+
+![alt tag](Screenshot_17.png)
+
+and finally calculate xp and ingredients you need to pass to each rank from your current one to Guru 20
+
+![alt tag](Screenshot_18.png)
+
+thank you (if any suggestions you 're welcome)
 
 ## Authors
 
